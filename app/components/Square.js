@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Square';
 
+/*
 export default class Square extends Component {
   constructor() {
     super();
@@ -22,3 +23,12 @@ export default class Square extends Component {
     );
   }
 }
+*/
+
+module.exports = function Square(props) {
+  return (
+    <button className={styles.square} onClick={() => props.onClick()}>
+      {props.value}
+    </button>
+  );
+};
