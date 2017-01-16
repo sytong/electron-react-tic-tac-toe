@@ -1,0 +1,15 @@
+{
+  "name": "electron-react-boilerplate",
+  "productName": "electron-react-boilerplate",
+  "version": "1.0.0",
+  "description": "Implement the Tic-Tac-Toe game from the official React tutorial using the electron-react-boilerplate",
+  "main": "./main.js",
+  "author": {
+    "name": "Willie Tong",
+    "email": "tongsinyin@gmail.com",
+    "url": "https://github.com/sytong"
+  },
+  "license": "MIT",
+  "dependencies": {
+  }
+}
