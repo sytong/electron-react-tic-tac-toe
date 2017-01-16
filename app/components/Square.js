@@ -4,15 +4,20 @@ import styles from './Square';
 export default class Square extends Component {
   constructor() {
     super();
-    this.state = {
+    this.props = {
       value: null,
     };
   }
 
+  props: {
+    value: number,
+    onClick: () => void
+  };
+
   render() {
     return (
-      <button className={styles.square} onClick={() => this.setState({ value: 'X' })}>
-        {this.state.value}
+      <button className={styles.square} onClick={() => this.props.onClick()}>
+        {this.props.value}
       </button>
     );
   }
